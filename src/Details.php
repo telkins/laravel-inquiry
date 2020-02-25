@@ -6,10 +6,10 @@ use Telkins\LaravelInquiry\Contracts\Details as Contract;
 
 abstract class Details implements Contract
 {
-    protected $questionClass;
+    protected $inquiryClass;
 
     final public function answer()
     {
-        return resolve($this->questionClass)->answer($this);
+        return resolve($this->inquiryClass)->answer($this);
     }
 }

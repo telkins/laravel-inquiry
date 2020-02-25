@@ -4,13 +4,12 @@
     "keywords": [
         "telkins",
         "laravel",
-        "interrogate",
         "inquiry",
         "question",
         "ask",
+        "interrogate",
         "answer",
         "query",
-        "inquiry",
         "laravel-inquiry"
     ],
     "homepage": "https://github.com/telkins/laravel-inquiry",

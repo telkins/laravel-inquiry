@@ -2,7 +2,7 @@
 
 namespace Telkins\LaravelInquiry\Contracts;
 
-interface Question
+interface Inquiry
 {
     public static function ask(): Details;
 
