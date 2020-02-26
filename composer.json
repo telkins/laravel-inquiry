@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "illuminate/support": "^6.16"
+        "laravel/framework": "^6.17"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.3",

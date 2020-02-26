@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-inquiry` will be documented in this file
 
+## v0.4.0 - 2020-02-26
+
+- added simple unit tests
+- changed required composer-based dependencies to laravel/framework to get `resolve()`
+
 ## v0.3.0 - 2020-02-26
 
 - added simple readme and additional docs

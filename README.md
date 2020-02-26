@@ -127,8 +127,6 @@ $canPeterPlay = $inquiryDetails
 
 ## Testing
 
-There are currently no tests.  Once written, however, this is how you execute them:
-
 ``` bash
 composer test
 ```
