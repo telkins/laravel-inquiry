@@ -121,7 +121,7 @@ $canGregPlay = $inquiryDetails
     ->answer();
 
 $canPeterPlay = $inquiryDetails
-    ->child($play)
+    ->child($peter)
     ->answer();
 ```
 
