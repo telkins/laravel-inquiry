@@ -39,9 +39,7 @@ use Telkins\LaravelInquiry\Contracts\Details;
 
 class CanChildPlayPS4 extends Inquiry
 {
-    protected static $detailsClass = CanChildPlayPS4Details::class; // For now, one must specify the details class
-
-    public function answer(Details $details)
+    public function provideAnswer(Details $details)
     {
         if (! $details->child->areChoresDone()) {
             return false;
@@ -73,8 +71,6 @@ use Telkins\LaravelInquiry\Details;
 
 class CanChildPlayPS4Details extends Details
 {
-    protected $inquiryClass = CanChildPlayPS4::class; // For now, one must specify the inquiry class
-
     public $child;
     public $dateTime;
 
@@ -123,6 +119,30 @@ $canGregPlay = $inquiryDetails
 $canPeterPlay = $inquiryDetails
     ->child($peter)
     ->answer();
+```
+
+## Conventions
+
+By default, each `Inquiry` class will look for a "details" class that has the same FQCN with `Details` appended.  So, for our example `CanChildPlayPS4` class, it will look for `CanChildPlayPS4Details`.
+
+To override this behavior, you can specify the "details" class name in your `Inquiry` class like so:
+
+``` php
+use Telkins\LaravelInquiry\Inquiry;
+use Telkins\LaravelInquiry\Contracts\Details;
+use My\Custom\Namespace\UnconventionalNameDetails;
+
+class CanChildPlayPS4 extends Inquiry
+{
+    protected static $detailsClass = UnconventionalNameDetails::class; // override default "details" class
+
+    public function provideAnswer(Details $details)
+    {
+        // ...
+    }
+
+    // ...
+}
 ```
 
 ## Testing

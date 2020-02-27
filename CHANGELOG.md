@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-inquiry` will be documented in this file
 
+## v0.5.0 - 2020-02-27
+
+- no longer necessary to specify details/inquiry classes
+
 ## v0.4.0 - 2020-02-26
 
 - added simple unit tests

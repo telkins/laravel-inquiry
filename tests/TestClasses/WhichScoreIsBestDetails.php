@@ -6,8 +6,6 @@ use Telkins\LaravelInquiry\Details;
 
 class WhichScoreIsBestDetails extends Details
 {
-    protected $inquiryClass = WhichScoreIsBest::class;
-
     public $game;
     public $scoreA;
     public $scoreB;

@@ -5,8 +5,10 @@ namespace Telkins\LaravelInquiry\Tests\TestClasses;
 use Telkins\LaravelInquiry\Inquiry;
 use Telkins\LaravelInquiry\Contracts\Details;
 
-class WhichScoreIsBest extends Inquiry
+class WhichScoreIsBestExplicit extends Inquiry
 {
+    protected static $detailsClass = WhichScoreIsBestDetails::class;
+
     protected function provideAnswer(Details $details)
     {
         if ($details->scoreA === $details->scoreB) {
