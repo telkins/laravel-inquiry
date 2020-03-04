@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-inquiry` will be documented in this file
 
+## v0.6.0 - 2020-03-04
+
+- added support for Laravel 7.0
+
 ## v0.5.0 - 2020-02-27
 
 - no longer necessary to specify details/inquiry classes
